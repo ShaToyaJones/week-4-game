@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+
+<!-- CSS reference -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body background="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/week_5/week-4-homework/week-4-game/assets/images/background.jpg">
+
+<header>Crystals Collector!!!</header>
+<br>
+
+<div id="directions">
+	<li>You will be given a random number at the stsart of the game.</li>
+	<li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+	<li>You win the game by matching your total score to a random number. You lose the game if your total score goes above the random number.</li>
+	<li>The value of each crystal is hidden from you until you click on it.</li>
+	<li>Each time when the game starts, the game will change the values of each crystal.</li>
+	<li>Great luck to you!!!</li>
+	<br><br>
+</div>
+
+<div id="buttons">
+	<div class="crystals">
+		<img src="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/week_5/week-4-homework/week-4-game/assets/images/blue%20crystal.png">
+		<img src="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/week_5/week-4-homework/week-4-game/assets/images/yellow%20crystal.png">
+		<img src="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/week_5/week-4-homework/week-4-game/assets/images/green%20crystal.png">	
+		<img src="file:///C:/Users/ShaTo/Documents/UCF_BootCamp/week_5/week-4-homework/week-4-game/assets/images/red%20crystal.png">		
+	</div>	
+</div>
+
+<!-- <! link to jQuery library -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/core.js"></script>
+
+<!-- link to javascript -->
+<script type="text/javascript">
+
+// created a simple "alert" to get our bearings
+// 	alert("hi");
+
+//variable of counter and on click event
+	var counter = 0;
+	$(".crystal-image").on("click", function()
+		{
+
+//when the counter is clicked, it increases by the number 1.
+	counter += 1;
+
+//click the button will trigger an alert message.
+	alert("you clicked on a crystal!");
+
+	});
+
+
+	</script>
+</body>
